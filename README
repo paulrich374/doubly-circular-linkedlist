@@ -1,0 +1,96 @@
+Documentation for Warmup Assignment 1
+=====================================
+
++-------+
+| BUILD |
++-------+
+
+Comments: ?
+
+The command to generate warmup1 executable
+	make warmup1
+The command to clean up *.o files and executable
+	make clean
+
++------+
+| SKIP |
++------+
+
+Is there are any tests in the standard test suite that you know that it's not
+working and you don't want the grader to run it at all so you won't get extra
+deductions, please list them here.  (Of course, if the grader won't run these
+tests, you will not get plus points for them.)
+
+None.
++---------+
+| GRADING |
++---------+
+
+(A) Doubly-linked Circular List : ? out of 40 pts
+
+40 points
+Verified: run listtest.c without getting any output and error/warning message
+ 
+(B.1) Sort (file) : ? out of 30 pts
+
+30 poits
+Verified: run command line ./warmup1 sort test.tfile and get the correct sorted ouput
+
+(B.2) Sort (stdin) : ? out of 30 pts
+
+30 poits
+Verified: run command line ./warmup1 sort and paste the transactions line by line and then hit enter enter to execute and get the correct sorted ouput
+
+Missing required section(s) in README file : (Comments?)
+None.
+
+Cannot compile : (Comments?)
+None.
+
+Compiler warnings : (Comments?)
+None.
+
+"make clean" : (Comments?)
+Yes.
+
+Segmentation faults : (Comments?)
+None.
+
+Separate compilation : (Comments?)
+Yes.
+
+Malformed input : (Comments?)
+handled.
+
+Too slow : (Comments?)
+Acceptable.
+
+Bad commandline : (Comments?)
+handled.
+
+Bad behavior for random input : (Comments?)
+handled.
+
+Did not use My402List and My402ListElem to implement "sort" in (B) : (Comments?)
+None.
+
++------+
+| BUGS |
++------+
+
+Comments: ?
+Not that I am aware of.
+
++-------+
+| OTHER |
++-------+
+
+Comments on design decisions: ?
+
+Make main() code as few as possible.
+So create 4 other functions: OpenFile, ReadInput, SortList, PrintList.
+SortList use bubble sort due to the list concatenated feature. So it's hard to use insertion sort or something because it needs random access to the list.   
+
+Comments on deviation from spec: ?
+
+None.
